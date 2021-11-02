@@ -17,10 +17,7 @@ public class Bruch
 
     private BruchFormat bruchFormat;
 
-    public interface BruchFormat
-    {
-        String bruchToString(int z, int n);
-    }
+
 
     /**
      * Erzeugt einen Bruch mit dem gegebenen Zaehler und Nenner.

@@ -1,6 +1,6 @@
 package uebung4;
 
-public class DoubleFormat implements Bruch.BruchFormat
+public class DoubleFormat implements BruchFormat
 {
     @Override
     public String bruchToString(int z, int n)

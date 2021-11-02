@@ -2,7 +2,7 @@ package uebung4;
 
 import java.util.Locale;
 
-public class BenutzerFormat implements Bruch.BruchFormat
+public class BenutzerFormat implements BruchFormat
 {
     private final String bruchDarstellung;
     private final Locale userLocale;

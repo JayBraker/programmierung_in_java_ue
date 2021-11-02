@@ -1,6 +1,6 @@
 package uebung4;
 
-public class SchraegStrichFormat implements Bruch.BruchFormat
+public class SchraegStrichFormat implements BruchFormat
 {
     @Override
     public String bruchToString(int z, int n)

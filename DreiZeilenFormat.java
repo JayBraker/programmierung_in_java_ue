@@ -2,7 +2,7 @@ package uebung4;
 
 import java.util.Arrays;
 
-public class DreiZeilenFormat implements Bruch.BruchFormat
+public class DreiZeilenFormat implements BruchFormat
 {
     @Override
     public String bruchToString(int z, int n)

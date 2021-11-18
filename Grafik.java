@@ -29,16 +29,15 @@ public class Grafik {
   public Grafik(int width, int height) {
     this.frame = new JFrame();
     this.frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    this.panel =
-        new JPanel() {
-          @Override
-          public void paint(Graphics g) {
-            super.paint(g);
-            for (int i = 0; i < Grafik.this.figuren.size(); i++) {
-              Grafik.this.figuren.get(i).paint(g);
-            }
-          }
-        };
+    this.panel = new JPanel() {
+      @Override
+      public void paint(Graphics g) {
+        super.paint(g);
+        for (int i = 0; i < Grafik.this.figuren.size(); i++) {
+          Grafik.this.figuren.get(i).paint(g);
+        }
+      }
+    };
     this.panel.setPreferredSize(new Dimension(width, height));
     this.frame.add(this.panel);
     this.frame.pack();
@@ -56,13 +55,12 @@ public class Grafik {
     // frame.repaint();
     try {
       Thread.sleep(verzoegerung);
-      SwingUtilities.invokeAndWait(
-          new Runnable() {
-            @Override
-            public void run() {
-              Grafik.this.panel.paint(Grafik.this.panel.getGraphics());
-            }
-          });
+      SwingUtilities.invokeAndWait(new Runnable() {
+        @Override
+        public void run() {
+          Grafik.this.panel.paint(Grafik.this.panel.getGraphics());
+        }
+      });
     } catch (InterruptedException e) {
     } catch (InvocationTargetException e) {
     }
@@ -86,6 +84,7 @@ public class Grafik {
     this.figuren.remove(f);
   }
 }
+
 
 abstract class Figur {
 

@@ -7,7 +7,7 @@ public class AXhochN implements Funktion {
   private final double A;
   private final double N;
 
-  public AXhochN(double a, double n) {
+  private AXhochN(double a, double n) {
     A = a;
     N = n;
   }
@@ -24,6 +24,21 @@ public class AXhochN implements Funktion {
 
   @Override
   public String toString() {
-    return String.format(Locale.US, "%.1f*x^%.1f", A, N);
+    StringBuilder sb = new StringBuilder();
+    String ret;
+    if (A != 1) {
+      sb.append(String.format(Locale.US, "%.1f", A));
+    }
+    sb.append("x");
+    if (N != 1) {
+      sb.append(String.format(Locale.US, "^%.1f", N));
+    }
+    
+    if (A != 0) {
+      ret = sb.toString();
+    } else {
+      ret = null;
+    }
+    return ret;
   }
 }

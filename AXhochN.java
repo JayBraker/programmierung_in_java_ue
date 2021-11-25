@@ -33,7 +33,7 @@ public class AXhochN implements Funktion {
     if (N != 1) {
       sb.append(String.format(Locale.US, "^%.1f", N));
     }
-    
+
     if (A != 0) {
       ret = sb.toString();
     } else {

@@ -1,5 +1,7 @@
 package uebung8;
 
+import java.util.Locale;
+
 public class AXhochN implements Funktion {
 
   private final double A;
@@ -22,6 +24,6 @@ public class AXhochN implements Funktion {
 
   @Override
   public String toString() {
-    return String.format("%.1f*x^%.1f", A, N);
+    return String.format(Locale.US, "%.1f*x^%.1f", A, N);
   }
 }

@@ -11,10 +11,10 @@ public class AXhochN implements Funktion {
     A = a;
     N = n;
   }
-  
+
   public static Funktion get(double a, double n) {
     if (a != 0) {
-      return new AXhochN(a,n);
+      return new AXhochN(a, n);
     } else {
       return null;
     }

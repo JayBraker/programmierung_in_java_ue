@@ -9,7 +9,7 @@ public class Summe implements Funktion {
     F1 = f1;
     F2 = f2;
   }
-  
+
   @Override
   public double getY(double d) {
     return F1.getY(d) + F2.getY(d);

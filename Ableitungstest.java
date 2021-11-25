@@ -5,8 +5,8 @@ import java.util.Locale;
 public class Ableitungstest {
 
   public static void main(String[] args) {
-    Funktion f1 = new AXhochN(3, 2); // Fassung mit Konstruktoren, die
-    Funktion f2 = new AXhochN(7, 1); // noch nicht `private' sind
+    Funktion f1 = AXhochN.get(3, 2); // Fassung mit Konstruktoren, die
+    Funktion f2 = AXhochN.get(7, 1); // noch nicht `private' sind
     Funktion f = new Summe(f1, f2);
     // Wenn die statische Methode `get' implementiert wurde,
     // muessen diese drei Zeilen ein- und die oberen drei

@@ -12,11 +12,11 @@ public class AXhochN implements Funktion {
 
   @Override
   public double getY(double d) {
-    return A*Math.pow(d, N);
+    return A * Math.pow(d, N);
   }
 
   @Override
   public Funktion getAbleitung() {
-    return new AXhochN(A*N, N-1);
+    return new AXhochN(A * N, N - 1);
   }
 }

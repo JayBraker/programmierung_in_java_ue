@@ -11,4 +11,9 @@ public class Null implements Funktion {
   public Funktion getAbleitung() {
     return new Null();
   }
+  
+  @Override
+  public String toString() {
+    return "0";
+  }
 }

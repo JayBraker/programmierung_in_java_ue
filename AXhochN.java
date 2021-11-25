@@ -19,4 +19,9 @@ public class AXhochN implements Funktion {
   public Funktion getAbleitung() {
     return new AXhochN(A * N, N - 1);
   }
+
+  @Override
+  public String toString() {
+    return String.format("%.1f*x^%.1f", A, N);
+  }
 }

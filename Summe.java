@@ -19,4 +19,9 @@ public class Summe implements Funktion {
   public Funktion getAbleitung() {
     return new Summe(F1.getAbleitung(), F2.getAbleitung());
   }
+
+  @Override
+  public String toString() {
+    return String.format("%s + %s", F1, F2);
+  }
 }
